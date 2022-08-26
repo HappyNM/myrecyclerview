@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which Countries have English as an official Language"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kenyacheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <CheckBox
+        android:id="@+id/kenyacheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicked"
+        android:text="Kenya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <CheckBox
+        android:id="@+id/ugandacheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicked"
+        android:text="Uganda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <CheckBox
+        android:id="@+id/djibouticheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicked"
+        android:text="Djibouti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioyes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSelect"
+                android:text="Yes"/>
+
+            <RadioButton
+                android:id="@+id/radiono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSelect"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radionotsure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSelect"
+                android:text="Not Sure" />
+            <TextView
+                android:id="@id/textresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textcert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Are you a certified Android Developer"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+</androidx.constraintlayout.widget.ConstraintLayout>

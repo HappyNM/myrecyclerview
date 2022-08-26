@@ -1,0 +1,2 @@
+include ':MUTOROJNR'
+rootProject.name='My App'
